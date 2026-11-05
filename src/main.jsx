@@ -74,7 +74,7 @@ function App() {
       <a className="brand" href="#" onClick={(e)=>{e.preventDefault();setPage('home');location.hash='';}}>
         <span className="brand-mark">I</span><span>IMPACT <small>moviment</small></span>
       </a>
-      <button className="admin-link" onClick={()=>{setPage('admin');location.hash='admin';}}><ShieldCheck size={16}/> Liderança</button>
+      <button className="admin-link" onClick={()=>{setPage('admin');location.hash='admin';}}><ShieldCheck size={16}/> Staff</button>
     </header>
 
     {page === 'home' ? <main className="main">
