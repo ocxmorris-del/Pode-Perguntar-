@@ -72,22 +72,22 @@ function App() {
   return <div className="app">
     <header className="topbar">
       <a className="brand" href="#" onClick={(e)=>{e.preventDefault();setPage('home');location.hash='';}}>
-        <span className="brand-mark">I</span><span>IMPACT <small>COMUNIDADE</small></span>
+        <span className="brand-mark">I</span><span>IMPACT <small>moviment</small></span>
       </a>
       <button className="admin-link" onClick={()=>{setPage('admin');location.hash='admin';}}><ShieldCheck size={16}/> Liderança</button>
     </header>
 
     {page === 'home' ? <main className="main">
       <div className="hero">
-        <div className="eyebrow"><span></span> UM ESPAÇO DE CONVERSA E FÉ</div>
+        <div className="eyebrow"><span></span> CRISTO É A RAIZ DE TODA SABEDORIA</div>
         <h1>Pode <em>perguntar!</em></h1>
         <p className="subtitle">Toda dúvida merece ser ouvida.</p>
-        <p className="intro">Envie sua pergunta para a liderança do Impact. Pode ser sobre a Bíblia, fé, vida cristã ou qualquer assunto que você queira conversar.</p>
+        <p className="intro">Envie sua pergunta para o staff. Pode ser sobre a Bíblia, fé, vida cristã ou qualquer assunto que você queira conversar.</p>
       </div>
       <section className="form-card">
         {sent ? <div className="success">
           <div className="success-icon"><CheckCircle2 size={30}/></div>
-          <h2>Pergunta enviada!</h2><p>Sua pergunta chegou à liderança do Impact. Obrigado por confiar esse assunto a nós.</p>
+          <h2>Pergunta enviada!</h2><p>Sua pergunta chegou à ao staff. Obrigado por confiar esse assunto a nós.</p>
           <button className="button secondary" onClick={()=>setSent(false)}>Enviar outra pergunta</button>
         </div> : <form onSubmit={submit}>
           <label htmlFor="question">Qual é a sua pergunta?</label>
@@ -102,7 +102,7 @@ function App() {
     </main> : <main className="admin-main">
       <button className="back" onClick={()=>{setPage('home');location.hash='';}}><ArrowLeft size={16}/> Voltar ao início</button>
       {!session ? <section className="login-card">
-        <div className="login-icon"><ShieldCheck size={24}/></div><h1>Painel da liderança</h1>
+        <div className="login-icon"><ShieldCheck size={24}/></div><h1>Painel do Staff</h1>
         <p>Acesso exclusivo à equipe responsável pelo Impact.</p>
         <form onSubmit={login}>
           <label>E-mail</label><input type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="seu@email.com" required/>
