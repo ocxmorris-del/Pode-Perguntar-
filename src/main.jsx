@@ -73,7 +73,7 @@ function App() {
     <header className="topbar">
       <a className="brand" href="#" onClick={(e)=>{e.preventDefault();setPage('home');location.hash='';}}>
         <span className="brand-mark">
-          <img src="/logo.jpg" alt="Logo IMPACT" />
+          <img src="/logo.png" alt="Logo IMPACT" />
         </span>
         <span>IMPACT <small>moviment</small></span>
       </a>
