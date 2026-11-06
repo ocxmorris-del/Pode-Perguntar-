@@ -72,7 +72,10 @@ function App() {
   return <div className="app">
     <header className="topbar">
       <a className="brand" href="#" onClick={(e)=>{e.preventDefault();setPage('home');location.hash='';}}>
-        <span className="brand-mark">I</span><span>IMPACT <small>moviment</small></span>
+        <span className="brand-mark">
+          <img src="/logo.jpg" alt="Logo IMPACT" />
+        </span>
+        <span>IMPACT <small>moviment</small></span>
       </a>
       <button className="admin-link" onClick={()=>{setPage('admin');location.hash='admin';}}><ShieldCheck size={16}/> Staff</button>
     </header>
@@ -128,3 +131,4 @@ function App() {
   </div>
 }
 createRoot(document.getElementById('root')).render(<App/>);
+      
