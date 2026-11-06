@@ -79,3 +79,27 @@ footer span{color:#00FF66;padding:0 5px}
 .question{padding:14px}
 .question time{font-size:9px}
 }
+/* Correção do tamanho da logo IMPACT */
+.brand-mark {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px;
+  min-height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  object-fit: contain;
+  position: absolute;
+  inset: 0;
+}
